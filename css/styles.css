@@ -1,0 +1,461 @@
+/*
+Project Name: Kenny Pure CSS
+Project URL: http://dev.webfacetecnologia.com.br/daniel/prototipos/kenny-pure-css/
+Git Repository: ;
+Description: Drawing kenny from south park only with CSS
+Author: <a href="http://www.linkedin.com/pub/daniel-moura/28/980/8b9/">Daniel Moura</a>
+*/
+
+body {
+	background: #00BEED;
+}
+
+*:after,
+*:before {
+	content: "";
+	display: block;
+}
+
+#kenny {
+	width: 320px;
+	height: 420px;
+	margin: -210px 0 0 -160px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#kenny .head,
+#kenny .body,
+#kenny .legs {
+	margin: 0 auto;
+	position: relative;
+}
+
+/* -------------|
+/* - HEAD
+/* ----- */
+
+#kenny .head {
+	width: 300px;
+	height: 298px;
+	margin-bottom: -35px;
+	z-index: 3;
+
+	border-radius: 48%;
+	 -webkit-border-radius: 48%;
+	 -moz-border-radius: 48%;
+
+	box-shadow: 0 4px 8px #e06a14;
+	 -moz-box-shadow: 0 4px 8px #e06a14;
+	 -webkit-box-shadow: 0 4px 8px #e06a14;
+
+	background-color: #ff8f4f;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8f4f), to(#ff7510));
+	background-image: -webkit-linear-gradient(top, #ff8f4f, #ff7510);
+	background-image: -moz-linear-gradient(top, #ff8f4f, #ff7510);
+	background-image: -o-linear-gradient(top, #ff8f4f, #ff7510);
+	background-image: -ms-linear-gradient(top, #ff8f4f, #ff7510);
+	background-image: linear-gradient(top, #ff8f4f, #ff7510);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ff8f4f', EndColorStr='#ff7510');
+
+}
+
+/* Detalhes Capuz */
+
+#kenny .head .hood-datails {
+	width: 200px;
+	height: 167px;
+	position: absolute;
+	top: 61px;
+	left: 51px;
+
+	background-color: #a85701;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(#592f09), to(#a85701));
+	background-image: -webkit-radial-gradient(50% 50%, #a85701, #592f09);
+	background-image: -moz-radial-gradient(50% 50%, #a85701, #592f09);
+	background-image: -ms-radial-gradient(50% 50%, #a85701, #592f09);
+	background-image: radial-gradient(50% 50%, #a85701, #592f09);
+
+	border-radius: 65%;
+	 -webkit-border-radius: 65%;
+	 -moz-border-radius: 65%;
+}
+
+
+#kenny .head .hood-datails:after {
+	width: 220px;
+	height: 190px;
+	border: 3px solid #000;
+	position: absolute;
+	left: -14px;
+	top: -2px;
+
+	border-radius: 50%;
+	 -webkit-border-radius: 50%;
+	 -moz-border-radius: 50%;
+}
+
+#kenny .head .hood-datails .snood {
+	bottom: -45px;
+	height: 15px;
+	padding-top: 35px;
+	overflow: hidden;
+	position: absolute;
+	left: 68px;
+	z-index: -1;
+}
+
+#kenny .head .hood-datails .snood:before {
+	height: 40px;
+	width: 55px;
+	display: block;
+	border-color: #000000 transparent transparent #000000;
+	border-style: solid;
+	border-width: 5px 0 0 8px;
+
+	transform: rotate(70deg) skew(50deg);
+	 -webkit-transform: rotate(70deg) skew(50deg);
+	 -moz-transform: rotate(70deg) skew(50deg);
+	 -ms-transform: rotate(70deg) skew(50deg);
+	 -o-transform: rotate(70deg) skew(50deg);
+}
+
+/* Rosto */
+
+#kenny .head .face {
+	width: 120px;
+	height: 105px;
+	position: absolute;
+	top: 93px;
+	left: 93px;
+	background: #ffedcb;
+
+	border-radius: 44% 44% 50% 50%;
+	 -webkit-border-radius: 44% 44% 50% 50%;
+	 -moz-border-radius: 44% 44% 50% 50%;
+}
+
+#kenny .head .face:after,
+#kenny .head .face:before {
+	position: absolute;
+	left: 12px;
+	border-style: solid;
+}
+
+#kenny .head .face:before {
+	top: -30px;
+
+	border-color: transparent transparent #FFEDCB;
+	border-width: 0 48px 48px;
+}
+
+#kenny .head .face:after {
+	bottom: -27px;
+
+	border-color: #FFEDCB transparent transparent;
+	border-width: 48px 48px 0;
+}
+
+#kenny .head .face .eye {
+	width: 63px;
+	height: 80px;
+	position: absolute;
+	top: 7px;
+	z-index: 1;
+	background: #FFF;
+
+	-webkit-animation: blink 6s infinite step-start 0s;
+	-moz-animation: blink 6s infinite step-start 0s;
+	-o-animation: blink 6s infinite step-start 0s;
+	-ms-animation: blink 6s infinite step-start 0s;
+	animation: blink 6s infinite step-start 0s;
+
+	-webkit-border-radius: 50% 50% 50% 50%;
+	-moz-border-radius: 50% 50% 50% 50%;
+	border-radius: 50% 50% 50% 50%;
+}
+
+#kenny .head .face .eye.left {
+	transform: rotate(10deg);
+	 -webkit-transform: rotate(10deg);
+	 -moz-transform: rotate(10deg);
+	 -ms-transform: rotate(10deg);
+	 -o-transform: rotate(10deg);
+}
+
+#kenny .head .face .eye.right {
+	right: 0;
+
+	transform: rotate(-10deg);
+	 -webkit-transform: rotate(-10deg);
+	 -moz-transform: rotate(-10deg);
+	 -ms-transform: rotate(-10deg);
+	 -o-transform: rotate(-10deg);
+}
+
+#kenny .head .face .eye .eye-ball {
+	width: 11px;
+	height: 11px;
+	position: absolute;
+	top: 39px;
+	background: #000;
+
+	-webkit-animation: hide-eye-ball 6s infinite step-start 0s;
+	 -moz-animation: hide-eye-ball 6s infinite step-start 0s;
+	 -o-animation: hide-eye-ball 6s infinite step-start 0s;
+	 -ms-animation: hide-eye-ball 6s infinite step-start 0s;
+	 animation: hide-eye-ball 6s infinite step-start 0s;
+
+	-webkit-border-radius: 50% 50% 50% 50%;
+	-moz-border-radius: 50% 50% 50% 50%;
+	border-radius: 50% 50% 50% 50%;
+}
+
+#kenny .head .face .eye.left .eye-ball {
+	left: 31px;
+}
+
+#kenny .head .face .eye.right .eye-ball {
+	left: 18px;
+}
+
+/* -------------|
+/* - BODY
+/* ----- */
+
+#kenny .body {
+	width: 100%;
+}
+
+#kenny .body .arm {
+	width: 51px;
+	height: 115px;
+	position: absolute;
+	z-index: 2;
+	top: -30px;
+	background: #FF7510;
+}
+
+#kenny .body .arm.left {
+	left: 25px;
+
+	border-radius: 45% 25% 40% 45%;
+	 -webkit-border-radius: 45% 25% 40% 45%;
+	 -moz-border-radius: 45% 25% 40% 45%;
+
+	transform: rotate(26deg);
+	 -webkit-transform: rotate(26deg);
+	 -moz-transform: rotate(26deg);
+	 -ms-transform: rotate(26deg);
+	 -o-transform: rotate(26deg);
+}
+
+#kenny .body .arm.right {
+	right: 25px;
+
+	transform: rotate(-25deg);
+	 -webkit-transform: rotate(-25deg);
+	 -moz-transform: rotate(-25deg);
+	 -ms-transform: rotate(-25deg);
+	 -o-transform: rotate(-25deg);
+
+	border-radius: 45% 35% 40% 45%;
+	 -webkit-border-radius: 45% 35% 40% 45%;
+	 -moz-border-radius: 45% 35% 40% 45%;
+}
+
+#kenny .body .arm .hand {
+	width: 65px;
+	height: 62px;
+	position: absolute;
+	bottom: -27px;
+
+	background-color: #804100;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(#592f09), to(#804100));
+	background-image: -webkit-radial-gradient(50% 50%, #804100, #592f09);
+	background-image: -moz-radial-gradient(50% 50%, #804100, #592f09);
+	background-image: -ms-radial-gradient(50% 50%, #804100, #592f09);
+	background-image: radial-gradient(50% 50%, #804100, #592f09);
+
+	border-radius: 50%;
+	 -webkit-border-radius: 50%;
+	 -moz-border-radius: 50%;
+}
+
+#kenny .body .arm.left .hand {
+	left: -3px;
+}
+
+#kenny .body .arm.right .hand {
+	right: 0;
+}
+
+#kenny .body .chest {
+	width: 200px;
+	height: 120px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+
+	background-color: #ea6918;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ea6918), to(#ff7510));
+	background-image: -webkit-linear-gradient(top, #ea6918, #ff7510);
+	background-image: -moz-linear-gradient(top, #ea6918, #ff7510);
+	background-image: -o-linear-gradient(top, #ea6918, #ff7510);
+	background-image: -ms-linear-gradient(top, #ea6918, #ff7510);
+	background-image: linear-gradient(top, #ea6918, #ff7510);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ea6918', EndColorStr='#ff7510');
+
+	border-radius: 0 0 10% 10%;
+	 -webkit-border-radius: 0 0 10% 10%;
+	 -moz-border-radius: 0 0 10% 10%;
+}
+
+#kenny .body .chest:before {
+	height: 80px;
+	border: 2px solid #000;
+	position: absolute;
+	left: 96px;
+	z-index: 2;
+	bottom: -7px;
+
+	border-radius: 2px 2px 0 0;
+	 -webkit-border-radius: 2px 2px 0 0;
+	 -moz-border-radius: 2px 2px 0 0;
+}
+
+#kenny .body .chest:after {
+	width: 190px;
+	height: 30px;
+	position: absolute;
+	bottom: -11px;
+	left: 5px;
+	background: #FF7510;
+	border-bottom: 4px solid #d04816;
+
+	-webkit-border-radius: 50% 50% 50% 50%;
+	-moz-border-radius: 50% 50% 50% 50%;
+	border-radius: 50% 50% 50% 50%;
+}
+
+/* -------------|
+/* - LEGS
+/* ----- */
+
+#kenny .legs {
+	width: 185px;
+	height: 30px;
+	margin-top: -3px;
+
+	background-color: #ff874d;
+	background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(#ff7510), to(#ff874d));
+	background-image: -webkit-radial-gradient(50% 50%, #ff874d, #ff7510);
+	background-image: -moz-radial-gradient(50% 50%, #ff874d, #ff7510);
+	background-image: -ms-radial-gradient(50% 50%, #ff874d, #ff7510);
+	background-image: radial-gradient(50% 50%, #ff874d, #ff7510);
+}
+
+#kenny .legs .foot {
+	width: 196px;
+	height: 10px;
+	margin-left: -6px;
+	position: absolute;
+	bottom: -9px;
+	background: #000;
+
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+
+/* -------------|
+/* - OLHOS PISCANDO
+/* ----- */
+
+@-webkit-keyframes blink {
+	0%, 100% {
+		background-color: #eddcbe;
+	}
+	15%, 95% {
+		background-color: #fff;
+	}
+}
+@-moz-keyframes blink {
+	0%, 100% {
+		background-color: #eddcbe;
+	}
+	15%, 95% {
+		background-color: #fff;
+	}
+}
+@-o-keyframes blink {
+	0%, 100% {
+		background-color: #eddcbe;
+	}
+	15%, 95% {
+		background-color: #fff;
+	}
+}
+@-ms-keyframes blink {
+	0%, 100% {
+		background-color: #eddcbe;
+	}
+	15%, 95% {
+		background-color: #fff;
+	}
+}
+@keyframes blink {
+	0%, 100% {
+		background-color: #eddcbe;
+	}
+	15%, 95% {
+		background-color: #fff;
+	}
+}
+
+/* -------------|
+/* - SUMIR PUPILA
+/* ----- */
+
+@-webkit-keyframes hide-eye-ball {
+	0%, 100% {
+		opacity: 0;
+	}
+	15%, 95% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes hide-eye-ball {
+	0%, 100% {
+		opacity: 0;
+	}
+	15%, 95% {
+		opacity: 1;
+	}
+}
+@-o-keyframes hide-eye-ball {
+	0%, 100% {
+		opacity: 0;
+	}
+	15%, 95% {
+		opacity: 1;
+	}
+}
+@-ms-keyframes hide-eye-ball {
+	0%, 100% {
+		opacity: 0;
+	}
+	15%, 95% {
+		opacity: 1;
+	}
+}
+@keyframes hide-eye-ball {
+	0%, 100% {
+		opacity: 0;
+	}
+	15%, 95% {
+		opacity: 1;
+	}
+}
